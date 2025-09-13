@@ -1,0 +1,54 @@
+{
+    "predictions": [
+        {
+            "x": 216,
+            "y": 257,
+            "width": 141,
+            "height": 256,
+            "confidence": 0.958,
+            "class": "Healthy Nut",
+            "class_id": 0,
+            "detection_id": "b28aa1f1-8b69-4f99-846a-23d61c6538ad"
+        },
+        {
+            "x": 357,
+            "y": 244,
+            "width": 146,
+            "height": 231,
+            "confidence": 0.925,
+            "class": "Healthy Nut",
+            "class_id": 0,
+            "detection_id": "b51c6f6d-7c8e-4b5a-ae89-8003c6067b56"
+        },
+        {
+            "x": 493,
+            "y": 459,
+            "width": 48,
+            "height": 106,
+            "confidence": 0.883,
+            "class": "Healthy Nut",
+            "class_id": 0,
+            "detection_id": "7b493bb7-b8fb-4bb4-b75c-4954b3f8fe87"
+        },
+        {
+            "x": 557,
+            "y": 444,
+            "width": 48,
+            "height": 92,
+            "confidence": 0.87,
+            "class": "Healthy Nut",
+            "class_id": 0,
+            "detection_id": "32b2f1d2-164c-446c-b7e9-778bd6f66532"
+        },
+        {
+            "x": 526,
+            "y": 467,
+            "width": 46,
+            "height": 115,
+            "confidence": 0.785,
+            "class": "Healthy Nut",
+            "class_id": 0,
+            "detection_id": "762609bd-5566-4ba1-be62-ddd3bea46d27"
+        }
+    ]
+}

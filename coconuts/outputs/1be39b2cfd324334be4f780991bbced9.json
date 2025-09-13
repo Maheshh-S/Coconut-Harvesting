@@ -1,0 +1,24 @@
+{
+    "predictions": [
+        {
+            "x": 222,
+            "y": 472,
+            "width": 227,
+            "height": 336,
+            "confidence": 0.959,
+            "class": "Mite Nut",
+            "class_id": 2,
+            "detection_id": "d51f42f5-ae0e-43c8-9475-471c244694ea"
+        },
+        {
+            "x": 385,
+            "y": 263,
+            "width": 200,
+            "height": 308,
+            "confidence": 0.907,
+            "class": "Mite Nut",
+            "class_id": 2,
+            "detection_id": "4c28af0d-0b7f-4413-bb40-10f0f67825c8"
+        }
+    ]
+}

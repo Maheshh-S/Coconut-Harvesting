@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coconut-Trees Detection</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <p style="color: red; font-style: italic; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; padding-bottom: 2rem;">
+        This is just a prototype to demonstrate how the model generates output or responses. 
+        These responses can then be transmitted to IoT hardware for further processing, 
+        actuation, or integration with real-world systems. The goal of this prototype is 
+        to validate the end-to-end pipeline - from AI inference to IoT communication - before 
+        scaling it into a fully functional solution.
+      </p>
+      
+      <h1><i class="fas fa-tree"></i> Coconut-Trees Detection</h1>
+      <p>Upload an image to detect trees using our advanced AI model</p>
+    </header>
+
+    <div class="upload-container">
+      <form id="uploadForm" method="POST" enctype="multipart/form-data">
+        <div class="upload-area" id="uploadArea">
+          <i class="fas fa-cloud-upload-alt"></i>
+          <p>Drag & drop your image here or click to browse</p>
+          <span class="upload-btn">Select Image</span>
+          <input type="file" name="file" id="fileInput" accept="image/*">
+        </div>
+        <button type="submit" class="detect-btn" id="detectBtn">
+          <i class="fas fa-search"></i> Detect Trees
+        </button>
+      </form>
+    </div>
+
+    <div class="results-container">
+      <div class="image-panel">
+        <div class="panel-header">
+          <h2><i class="fas fa-image"></i> Original Image</h2>
+        </div>
+        <div class="image-container">
+          <img id="previewImg" src="" alt="Original image preview">
+          <div class="placeholder" id="originalPlaceholder">
+            <i class="fas fa-image"></i>
+            <p>Original image will appear here</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="image-panel">
+        <div class="panel-header">
+          <h2><i class="fas fa-check-circle"></i> Detection Result</h2>
+        </div>
+        <div class="image-container">
+          <img id="outputImg" src="" alt="Detection result">
+          <div class="placeholder" id="resultPlaceholder">
+            <i class="fas fa-tree"></i>
+            <p>Detection results will appear here</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="json-output-container">
+      <div class="panel-header">
+        <h2><i class="fas fa-code"></i> Detection Data</h2>
+      </div>
+      <pre id="jsonOutput"></pre>
+      <div class="placeholder" id="dataPlaceholder">
+        <i class="fas fa-database"></i>
+        <p>Detection data will appear here</p>
+      </div>
+    </div>
+
+    <footer>
+      <p>Coconut-Trees Detection &copy; 2025 | Powered by AI</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    setupDetection("/detect/Coconut-Trees");
+  </script>
+</body>
+</html>

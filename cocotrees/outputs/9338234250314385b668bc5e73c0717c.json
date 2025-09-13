@@ -1,0 +1,24 @@
+{
+    "predictions": [
+        {
+            "x": 479,
+            "y": 533,
+            "width": 316,
+            "height": 212,
+            "confidence": 0.969,
+            "class": "coconut tree - v1 2021-12-21 10-56pm",
+            "class_id": 0,
+            "detection_id": "6df9f106-a03a-4c08-8526-264fabbb4515"
+        },
+        {
+            "x": 531,
+            "y": 212,
+            "width": 217,
+            "height": 227,
+            "confidence": 0.906,
+            "class": "coconut tree - v1 2021-12-21 10-56pm",
+            "class_id": 0,
+            "detection_id": "0ca7bc38-c0c4-40ed-81b5-5feaa5539d09"
+        }
+    ]
+}
