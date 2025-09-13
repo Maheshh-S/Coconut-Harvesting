@@ -11,7 +11,9 @@ from ultralytics import YOLO
 import firebase_admin
 from firebase_admin import credentials, firestore
 
-cred = credentials.Certificate("firebase-key.json")  # make sure this file is in your project root
+# ✅ Load service account from Secret File (Render mounts it)
+FIREBASE_KEY_FILE = "firebase-key.json"
+cred = credentials.Certificate(FIREBASE_KEY_FILE)
 firebase_admin.initialize_app(cred)
 db = firestore.client()
 
@@ -21,11 +23,11 @@ db = firestore.client()
 app = Flask(__name__, template_folder="ui", static_folder="ui", static_url_path="")
 
 # =======================
-# Load models
+# Load YOLO models
 # =======================
 models = {
-    "cocotrees": YOLO("models/besttt0.pt"),
-    "coconuts": YOLO("models/best2.pt")
+    "cocotrees": YOLO("models/besttt0.pt"),  # tree detection model
+    "coconuts": YOLO("models/best2.pt")      # coconut detection model
 }
 
 # =======================
@@ -136,4 +138,4 @@ def serve_output(project, filename):
 # Main
 # =======================
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True, host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
